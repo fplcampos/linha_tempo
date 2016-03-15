@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<title>Linha do Tempo</title>
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link href="assets/css/normalize.css" rel="stylesheet">
+	<link href="assets/css/styles.css" rel="stylesheet">
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- SDK FACEBOOK -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.5&appId=1591306431110344";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- SDK FACEBOOK -->
+	<!-- TWITTER -->
+	<script>window.twttr = (function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0],
+	t = window.twttr || {};
+	if (d.getElementById(id)) return t;
+	js = d.createElement(s);
+	js.id = id;
+	js.src = "https://platform.twitter.com/widgets.js";
+	fjs.parentNode.insertBefore(js, fjs);
+
+	t._e = [];
+	t.ready = function(f) {
+	t._e.push(f);
+	};
+
+	return t;
+	}(document, "script", "twitter-wjs"));</script>
+	<!-- TWITTER -->
+	<div class="navAnos">
+		<span class="marcador"></span>
+		<ul>
+			<li class="nav-1"><a href="#2011" class="active">2011</a></li>
+			<li class="nav-2"><a href="#2012">2012</a></li>
+			<li class="nav-3"><a href="#2013">2013</a></li>
+			<li class="nav-4"><a href="#2014">2014</a></li>
+			<li class="nav-5"><a href="#2015">2015</a></li>
+			<li class="nav-6"><a href="#2016">2016</a></li>
+		</ul>
+	</div>
+	<header>
+		<div class="container">
+			<h1>Secretaria da Aviação Civil</h1>
+			<h2>5 anos de operação</h2>
+			<h3>Viaje pela nossa linha do tempo</h3>
+			<div class="teclado right">
+				<p>Utilize o scroll ou a seta</p>
+				<figure>
+					<img src="assets/images/teclado.png" alt="Utilize o scroll ou a seta">
+				</figure>				
+			</div>
+
+			<div class="iniciar">
+				<span class="grampo_lt"></span>
+				<a href="#" class="inicio">iniciar</a>
+				<span class="grampo_rt"></span>
+			</div>
+		</div>
+	</header>
+	<section class="conteudo">
+		<div class="flag anoInicio" id="2011">
+			<div class="div_anos ano2011"></div>
+			<div class="container">
+				<div class="flagAno">2011</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- DECOR -->
+			<div class="airport1"></div>
+			<div class="pista_sup"></div>
+			<div class="aviao"></div>
+			<div class="airport2"></div>
+			<div class="flash"></div>
+			<div class="flash flash2"></div>
+			<div class="flash flash3"></div>
+			<div class="flash flash4"></div>
+			<!-- INFORMATIVOS -->
+			<article class="info ano2011">
+				<h4>Criação da Secretaria de Aviação Civil</h4>
+				<h5>por meio da MP 527/2011</h5>
+			</article>
+			<article class="info info2 ano2011_2">
+				<h4>Status de ministério</h4>
+				<h5>Através do decreto<br>de regulamentação<br>da Secretaria</h5>
+			</article>
+
+			<!-- MARCOS -->
+			<article class="marcos marco1">
+				<a href="#janela1" class="modalAno2011" rel="modal">Marco 1</a>
+			</article>
+			<article class="marcos marco2">
+				<a href="#janela2" class="modalAno2011" rel="modal">Marco 2</a>
+			</article>
+			<article class="marcos marco3">
+				<a href="#janela3" class="modalAno2011" rel="modal">Marco 3</a>
+			</article>
+			<article class="marcos marco4">
+				<a href="#janela4" class="modalAno2011" rel="modal">Marco 4</a>
+			</article>
+		</div>
+	</section>
+	<section class="sky">
+		<div class="shadow_up"></div>
+		<div class="flag anoInicio" id="2012">
+			<div class="div_anos ano2012"></div>
+			<div class="container">
+				<div class="flagAno dir">2012</div>
+			</div>
+		</div>
+		<div class="container">
+			<!-- INFORMATIVOS -->
+			<article class="info ano2012">
+				<h4>Criação<br>do Programa de Aviação Regional</h4>
+				<h5>Lorem ipsum dolor sit amet</h5>
+			</article>
+			<article class="info ano2012_2">
+				<h4>Criação do<br>Programa<br>de Aviação Regional</h4>
+				<h5>Lorem ipsum dolor sit amet</h5>
+			</article>
+			<!-- MARCOS -->
+			<article class="marcos marco1 scaling">
+				<a href="#janela5" class="modalAno2012" rel="modal">Marco 1</a>
+			</article>
+			<article class="marcos marco2 scaling">
+				<a href="#janela6" class="modalAno2012" rel="modal">Marco 2</a>
+			</article>
+			<article class="marcos marco3 scaling">
+				<a href="#janela7" class="modalAno2012" rel="modal">Marco 3</a>
+			</article>
+			<article class="marcos marco4 scaling">
+				<a href="#janela8" class="modalAno2012" rel="modal">Marco 4</a>
+			</article>
+
+			<!-- ANO 2013 -->
+			<article class="info info2013 ano2013">
+				<h4>Primeira<br>edição do Prêmio<br>Boa Viagem</h4>
+				<h5>(melhores aeroportos do País)</h5>
+			</article>
+			<article class="info info2013 ano2013_2">
+				<h4>Copa das<br>Confederações e<br>Jornada Mundial da<br>Juventude</h4>
+				<h5>Lorem ipsum dolor sit amet</h5>
+			</article>
+			<!-- MARCOS -->
+			<article class="marcos marco1 m131 scaling">
+				<a href="#janela9" class="modalAno2013" rel="modal">Marco 1</a>
+			</article>
+			<article class="marcos marco2 m132 scaling">
+				<a href="#janela10" class="modalAno2013" rel="modal">Marco 2</a>
+			</article>
+			<article class="marcos marco3 m133 scaling">
+				<a href="#janela11" class="modalAno2013" rel="modal">Marco 3</a>
+			</article>
+			<article class="marcos marco4 m134 scaling">
+				<a href="#janela12" class="modalAno2013" rel="modal">Marco 4</a>
+			</article>
+
+			<!-- ANO 2014 -->
+			<article class="info ano2014">
+				<h4>Copa do Mundo<br>de Futebol</h4>
+				<h5>Evento no Brasil</h5>
+			</article>
+		</div>
+		<div class="flag anoMed">
+			<div class="div_anos ano2013" id="2013"></div>
+			<div class="container">
+				<div class="flagAno">2013</div>
+			</div>
+		</div>
+		<div class="flag anoFinal">
+			<div class="div_anos ano2014" id="2014"></div>
+			<div class="container">
+				<div class="flagAno dir">2014</div>
+			</div>
+		</div>
+		<div class="shadow_down"></div>
+	</section>
+	<section class="conteudo inf">
+		<div class="container">
+			<!-- DECOR -->
+			<div class="campos"></div>
+			<div class="pista_inf"></div>
+			<div class="flash flash5"></div>
+			<div class="flash flash6"></div>
+			<div class="flash flash7"></div>
+			<div class="flash flash8"></div>
+			<div class="flash flash9"></div>
+			<div class="flash flash10"></div>
+			<div class="flash flash11"></div>
+			<div class="flash flash12"></div>
+			<div class="flash flash13"></div>
+			<div class="flash flash14"></div>
+
+			<!-- MARCOS -->
+			<article class="marcos marco5">
+				<a href="#janela13" class="modalAno2014" rel="modal">Marco 1</a>
+			</article>
+			<article class="marcos marco6">
+				<a href="#janela14" class="modalAno2015" rel="modal">Marco 1</a>
+			</article>
+			<article class="marcos marco7">
+				<a href="#janela15" class="modalAno2015" rel="modal">Marco 2</a>
+			</article>
+			<article class="marcos marco8">
+				<a href="#janela16" class="modalAno2015" rel="modal">Marco 3</a>
+			</article>
+			<article class="marcos marco9">
+				<a href="#janela17" class="modalAno2015" rel="modal">Marco 4</a>
+			</article>
+			<article class="marcos marco10">
+				<a href="#janela18" class="modalAno2015" rel="modal">Marco 5</a>
+			</article>
+
+			<!-- ANO 2015 -->
+			<!-- INFORMATIVOS -->
+			<article class="info ano2015">
+				<h4>Campanha de conscientização do uso dos<br>drones</h4>
+				<h5>Evento no Brasil</h5>
+			</article>
+			<article class="info ano2015_2">
+				<h4>Criação<br>Bolsa-piloto</h4>
+				<h5>Lorem ipsum dolor itsum ente alent</h5>
+			</article>
+			<div class="drone_1"></div>
+			<div class="drone_2"></div>
+			<div class="drone_3"></div>
+
+			<div class="airport3"></div>
+			<!-- ANO 2016 -->
+			<!-- INFORMATIVOS -->
+			<article class="info ano2016_2">
+				<h4>3 anos de<br>pesquisa de<br>satisfação do<br>passageiro</h4>
+				<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+			</article>
+			<article class="info ano2016_3">
+				<h4>Segunda edição<br>do Prêmio<br>Aeroportos<br>+ Brasil</h4>
+				<h5>(Infraero + FRAport)</h5>
+			</article>
+
+			<!-- MARCOS -->
+			<article class="marcos marco11">
+				<a href="#janela19" class="modalAno2016" rel="modal">Marco 1</a>
+			</article>
+			<article class="marcos marco12">
+				<a href="#janela20" class="modalAno2016" rel="modal">Marco 2</a>
+			</article>
+			<article class="marcos marco13">
+				<a href="#janela21" class="modalAno2016" rel="modal">Marco 3</a>
+			</article>
+			<article class="marcos marco14">
+				<a href="#janela22" class="modalAno2016" rel="modal">Marco 4</a>
+			</article>
+			<div class="final">
+				<span class="grampo_lt"></span>
+				<a href="#">obrigado</a>
+				<span class="grampo_rt"></span>
+			</div>
+			<div class="box">
+				<h4>Planejando estrategicamente<br>as prioridades<br>dos programas<br>e investimento</h4>
+				<div class="portal">
+					<span class="grampo_lt"></span>
+					<a href="http://www.aviacao.gov.br/" target="_blank" rel="noopener">portal sac</a>
+					<span class="grampo_rt"></span>
+				</div>
+			</div>
+			<div class="social">
+				<div class="fb-like" data-href="https://www.facebook.com/AviacaoGovBr" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+				<a class="twitter-follow-button" data-show-screen-name="false" href="https://twitter.com/AviacaoGovBr">Seguir @AviacaoGovBr</a>
+			</div>
+			<div class="baseSocial">
+				<ul class="redesSociais">
+					<li><a href="http://www.facebook.com/AviacaoGovBr" target="_blank" rel="noopener" class="lkSocial fb" alt="Siga nos no Facebook" title="Siga nos no Facebook"></a></li>
+					<li><a href="http://www.twitter.com.br/AviacaoGovBr" target="_blank" rel="noopener" class="lkSocial tw" alt="Siga nos no Twitter" title="Siga nos no Twitter"></a></li>
+					<li><a href="http://www.instagram.com/AviacaoGovBr" target="_blank" rel="noopener" class="lkSocial it" alt="Siga nos no Instagram" title="Siga nos no Instagram"></a></li>
+					<li><a href="http://www.youtube.com/AviacaoGovBr" target="_blank" rel="noopener" class="lkSocial yt" alt="Inscreva em nosso canal no YouTube" title="Inscreva em nosso canal no YouTube"></a></li>
+				</ul>
+			</div>
+			<a href="#" class="topo">topo</a>
+		</div>
+		<div class="flag anoInicio">
+			<div class="div_anos ano2015" id="2015"></div>
+			<div class="container">
+				<div class="flagAno">2015</div>
+			</div>
+		</div>
+		<div class="flag anoMed">
+			<div class="div_anos ano2016" id="2016"></div>
+			<div class="container">
+				<div class="flagAno dir">2016</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- MODAL 2011 -->
+	<div class="modal ano2011" id="janela1">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2011 / MARCO 01</h2>
+		</div>
+	</div>
+	<div class="modal ano2011_2" id="janela2">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2011 / MARCO 02</h2>
+		</div>
+	</div>
+	<div class="modal ano2011_3" id="janela3">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2011 / MARCO 03</h2>
+		</div>
+	</div>
+	<div class="modal ano2011_4" id="janela4">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2011 / MARCO 04</h2>
+		</div>
+	</div>
+	<!-- MODAL 2012 -->
+	<div class="modal ano2012" id="janela5">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2012 / MARCO 01</h2>
+		</div>
+	</div>
+	<div class="modal ano2012_2" id="janela6">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2012 / MARCO 02</h2>
+		</div>
+	</div>
+	<div class="modal ano2012_3" id="janela7">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2012 / MARCO 03</h2>
+		</div>
+	</div>
+	<div class="modal ano2012_4" id="janela8">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2012 / MARCO 04</h2>
+		</div>
+	</div>
+	<!-- MODAL 2013 -->
+	<div class="modal ano2013" id="janela9">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2013 / MARCO 01</h2>
+		</div>
+	</div>
+	<div class="modal ano2013_2" id="janela10">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2013 / MARCO 02</h2>
+		</div>
+	</div>
+	<div class="modal ano2013_3" id="janela11">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2013 / MARCO 03</h2>
+		</div>
+	</div>
+	<div class="modal ano2013_4" id="janela12">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2013 / MARCO 04</h2>
+		</div>
+	</div>
+	<!-- MODAL 2014 -->
+	<div class="modal ano2014" id="janela13">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2014 / MARCO 01</h2>
+		</div>
+	</div>
+	<!-- MODAL 2015 -->
+	<div class="modal ano2015" id="janela14">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2015 / MARCO 01</h2>
+		</div>
+	</div>
+	<div class="modal ano2015_2" id="janela15">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2015 / MARCO 02</h2>
+		</div>
+	</div>
+	<div class="modal ano2015_3" id="janela16">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2015 / MARCO 03</h2>
+		</div>
+	</div>
+	<div class="modal ano2015_4" id="janela17">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2015 / MARCO 04</h2>
+		</div>
+	</div>
+	<div class="modal ano2015_5" id="janela18">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2015 / MARCO 05</h2>
+		</div>
+	</div>
+	<div class="modal ano2016" id="janela19">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2016 / MARCO 01</h2>
+		</div>
+	</div>
+	<div class="modal ano2016_2" id="janela20">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2016 / MARCO 02</h2>
+		</div>
+	</div>
+	<div class="modal ano2016_3" id="janela21">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2016 / MARCO 03</h2>
+		</div>
+	</div>
+	<div class="modal ano2016_4" id="janela22">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2016 / MARCO 04</h2>
+		</div>
+	</div>
+
+	<footer>
+		<a href="http://www.aviacao.gov.br/" alt="Secretaria de Aviação Civil Presidência da República" title="Secretaria de Aviação Civil Presidência da República" target="_blank" rel="noopener"></a>
+	</footer>
+	<script src="assets/js/jquery-1.12.1.min.js"></script>
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<script src="assets/js/jquery.jscroll.js"></script>
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
