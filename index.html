@@ -3,12 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Linha do Tempo</title>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="assets/images/hor_art.png" type="image/png">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,400italic,800italic' rel='stylesheet' type='text/css'>
 	<link href="assets/css/normalize.css" rel="stylesheet">
 	<link href="assets/css/styles.css" rel="stylesheet">
+	<link href="slick/slick.css" rel="stylesheet">
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
 	<![endif]-->
+	<script src="assets/js/jquery-2.2.1.js"></script>
+	<script src="assets/js/jquery-ui.js"></script>
+	<script src="assets/js/jquery.slimscroll.js"></script>
+	<script src="assets/js/jquery.beforeafter-1.4.js"></script>
+	<script src="assets/js/jquery.easing.1.3.js"></script>
+	<script src="assets/js/jquery.jscroll.js"></script>
+
+	<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="slick/slick.min.js"></script>
+
+	<script src="assets/js/script.js"></script>	
+
 </head>
 <body>
 	<!-- SDK FACEBOOK -->
@@ -55,6 +69,12 @@
 			<h1>Secretaria da Aviação Civil</h1>
 			<h2>5 anos de operação</h2>
 			<h3>Viaje pela nossa linha do tempo</h3>
+			<div class="info_marco left">
+				<p>Clique nos marcos para<br>mais informações</p>
+				<figure>
+					<img src="assets/images/info_marco.png" alt="Clique nos marcos para mais informações">
+				</figure>
+			</div>
 			<div class="teclado right">
 				<p>Utilize o scroll ou a seta</p>
 				<figure>
@@ -86,6 +106,7 @@
 			<div class="flash flash2"></div>
 			<div class="flash flash3"></div>
 			<div class="flash flash4"></div>
+			<div class="flash flash41"></div>
 			<!-- INFORMATIVOS -->
 			<article class="info ano2011">
 				<h4>Criação da Secretaria de Aviação Civil</h4>
@@ -109,6 +130,9 @@
 			<article class="marcos marco4">
 				<a href="#janela4" class="modalAno2011" rel="modal">Marco 4</a>
 			</article>
+			<article class="marcos marco41">
+				<a href="#janela41" class="modalAno2011" rel="modal">Marco 5</a>
+			</article>
 		</div>
 	</section>
 	<section class="sky">
@@ -122,12 +146,12 @@
 		<div class="container">
 			<!-- INFORMATIVOS -->
 			<article class="info ano2012">
-				<h4>Criação<br>do Programa de Aviação Regional</h4>
-				<h5>Lorem ipsum dolor sit amet</h5>
+				<h4>Leilão dos aeroportos Brasília, Guarulhos e Viracopos</h4>
+				<h5>Em fevereiro de 2012, o governo realiza o leilão dos aeroportos</h5>
 			</article>
 			<article class="info ano2012_2">
 				<h4>Criação do<br>Programa<br>de Aviação Regional</h4>
-				<h5>Lorem ipsum dolor sit amet</h5>
+				<h5>Encurtando distâncias, aproximando brasileiros</h5>
 			</article>
 			<!-- MARCOS -->
 			<article class="marcos marco1 scaling">
@@ -150,7 +174,7 @@
 			</article>
 			<article class="info info2013 ano2013_2">
 				<h4>Copa das<br>Confederações e<br>Jornada Mundial da<br>Juventude</h4>
-				<h5>Lorem ipsum dolor sit amet</h5>
+				<h5>As operações nos aeroportos serviriam como último teste para a Copa do Mundo de 2014.</h5>
 			</article>
 			<!-- MARCOS -->
 			<article class="marcos marco1 m131 scaling">
@@ -230,7 +254,7 @@
 			</article>
 			<article class="info ano2015_2">
 				<h4>Criação<br>Bolsa-piloto</h4>
-				<h5>Lorem ipsum dolor itsum ente alent</h5>
+				<h5>Formando novos pilotos</h5>
 			</article>
 			<div class="drone_1"></div>
 			<div class="drone_2"></div>
@@ -241,11 +265,11 @@
 			<!-- INFORMATIVOS -->
 			<article class="info ano2016_2">
 				<h4>3 anos de<br>pesquisa de<br>satisfação do<br>passageiro</h4>
-				<h5>Lorem ipsum dolor sit amet, consectetur</h5>
+				<h5>85% dos brasileiros aprovam seus aeroportos</h5>
 			</article>
 			<article class="info ano2016_3">
 				<h4>Segunda edição<br>do Prêmio<br>Aeroportos<br>+ Brasil</h4>
-				<h5>(Infraero + FRAport)</h5>
+				<h5>Curitiba é o melhor</h5>
 			</article>
 
 			<!-- MARCOS -->
@@ -302,29 +326,115 @@
 		</div>
 	</section>
 
+	<div class="overlay"></div>
+
 	<!-- MODAL 2011 -->
 	<div class="modal ano2011" id="janela1">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2011 / MARCO 01</h2>
+			<div class="content-1">
+				<h3>Criação da Secretaria de Aviação Civil</h3>
+				<h4>O direito de ir e vir ... de avião</h4>
+				<p>A Secretaria de Aviação Civil é criada por meio da Medida Provisória (MP) 527/2011. Com status de Ministério, a Aviação Civil, até então subordinada ao Ministério da Defesa, ganha um olhar estratégico e força para realizar essa estratégia, traduzida em novas políticas para o setor, como uma política de concessões capaz de melhorar os serviços dos aeroportos brasileiros e criar as condições necessárias para financiar uma aviação regional que torne realidade o direito de ir e vir de brasileiros que moram nas localidades mais distantes do País. A regulamentação da <i>Secretaria veio em maio, após publicação do Decreto 7476/2011.</i></p>
+			</div>
+			<div class="content-2">
+				<img src="assets/images/infografico-201101.jpg" alt="">
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2011_2" id="janela2">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2011 / MARCO 02</h2>
+			<div class="content-1">
+				<h3>Criação do FNAC</h3>
+				<h4>Equação Robin Hood</h4>
+				<p>O olhar estratégico presente na criação da Secretaria proporcionou ao setor uma fonte permanente de recursos para investimentos na Aviação: o Fundo Nacional de Aviação Civil (Fnac). Composto por taxas e outorgas da Aviação, seus recursos só podem ser investidos de volta no próprio setor. Em janeiro de 2016, o Fundo tinha R$ 4,5 bilhões em caixa. O Fnac atendia ao desafio da Secretaria de encontrar um modelo que permitisse que o excedente gerado pelos grandes aeroportos do País fosse aplicado na rede.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/criacao-fnac.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2011_3" id="janela3">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2011 / MARCO 03</h2>
+			<div class="content-1">
+				<h3>Início das concessões</h3>
+				<h4>Bom para todos</h4>
+				<p>Sob o comando da Secretaria, o Governo coloca em prática a política de concessões – que viria a ser a principal fonte de recursos do Fnac ao mesmo tempo que permitiria um crescimento do setor combinando saúde financeira com oferta de serviços aéreos de qualidade. O Aeroporto Internacional de São Gonçalo do Amarante (RN) é o primeiro a ser leiloado. No mesmo ano, são lançados os editais para Brasília (DF), Guarulhos (SP) e Campinas (SP). <a href="http://www.aviacao.gov.br/assuntos/concessoes-de-aeroportos" class="link" target="_blank">Acesse o site</a></p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201103.png" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2011_4" id="janela4">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2011 / MARCO 04</h2>
+			<div class="content-1">
+				<h3>Criação da Conaero</h3>
+				<h4>Qualidade na gestão aeroportuária</h4>
+				<p>Resolvidos o financiamento da Aviação e a política de concessões que transformaria para sempre os aeroportos do País, a Secretaria cria um grupo para monitorar a gestão do setor: a Comissão Nacional de Autoridades Aeroportuárias (Conaero). Cinco anos depois, a qualidade da gestão dos aeroportos pode ser medida antes e depois da sua criação. Primeiro, ela muda a gestão governamental dentro dos aeroportos. Órgãos que antes não se falavam passam a buscar soluções compartilhadas. Depois, começa a monitorar a qualidade da gestão dos 15 aeroportos que movimentam 80% dos passageiros no País por meio da Pesquisa Permanente de Satisfação do Passageiro. Com base nos seus resultados, a Conaero estabelece metas de qualidade para a gestão de cada um desses aeroportos.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/criacao-conaero201104.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
+		</div>
+	</div>
+	<div class="modal ano2011_5" id="janela41">
+		<div class="container">
+			<a class="fechar">X</a>
+			<h2>2011 / MARCO 05</h2>
+			<div class="content-1">
+				<h3>Criação do Comitê Técnico de Operações Especiais (CTOE)</h3>
+				<h4>A eficiência como marca</h4>
+				<p>A partir de 2012, o Brasil entra no calendário dos grandes eventos internacionais. Era preciso planejar o funcionamento dos aeroportos nestes períodos de alta demanda. Para isso, a Secretaria cria o CTOE, que passa a organizar as operações especiais para grandes eventos, como a Rio+20, Copa das Confederações, Copa do Mundo e agora planeja os Jogos Olímpicos e Paralímpicos Rio 2016. Com seu planejamento, seria registrado o recorde de movimentação diária nos aeroportos brasileiros num único dia, na Jornada Mundial da Juventude, em 2013: 100 mil passageiros. Rotineiramente, o CTOE planeja as operações especiais de fim de ano, Carnaval e outros feriados prolongados.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/criacao-ctoe201105.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<!-- MODAL 2012 -->
@@ -332,24 +442,108 @@
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2012 / MARCO 01</h2>
+			<div class="content-1">
+				<h3>Leilão dos aeroportos Brasília, Guarulhos e Viracopos</h3>
+				<h4>347% DE ÁGIO</h4>
+				<p>Em fevereiro de 2012, o governo realiza o leilão dos aeroportos Juscelino Kubitschek, em Brasília (DF), André Franco Montoro, em Guarulhos (SP), e Viracopos, em Campinas (SP), com ágio de 347%, o que representa uma arrecadação de R$ 24,5 bilhões para o Fundo Nacional da Aviação Civil (FNAC). Em dezembro, o governo lança o Programa de Investimento em Logística – Aeroportos (PIL), que anuncia a concessão dos aeroportos do Galeão (RJ) e Confins (MG).</p>
+			</div>
+			<div class="content-3">
+				<div class="carrossel">
+					<div><iframe width="791" height="445" src="https://www.youtube.com/embed/5EN9M90vJDk" frameborder="0" allowfullscreen></iframe></div>
+					<div><iframe width="791" height="445" src="https://www.youtube.com/embed/2ZBovtgjMx4" frameborder="0" allowfullscreen></iframe></div>
+				</div>
+			</div>
+			<div class="content-4">
+				<div class="carrossel2">
+					<div><img src="assets/images/galeria/amarante-01.jpg" title="" /><p>Amarantes</p></div>
+					<div><img src="assets/images/galeria/amarante-02.jpg" title="" /><p>Amarantes</p></div>
+					<div><img src="assets/images/galeria/amarante-03.jpg" title="" /><p>Amarantes</p></div>
+				</div>
+			</div>
+			<div class="content-5">
+				<div id="compare" class="fotosComparar">
+					<div><img src="assets/images/galeria/bsb_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/galeria/bsb_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico video" rel="content3">vídeos</a>
+				<a href="#" class="ico fotos" rel="content4">fotos</a>
+				<a href="#" class="ico comparar nomargin" rel="content5">comparar</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2012_2" id="janela6">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2012 / MARCO 02</h2>
+			<div class="content-1">
+				<h3>RIO+20</h3>
+				<h4>Especialidade em receber bem</h4>
+				<p>A Secretaria, por meio do CTOE, fecha Acordo Operacional de planejamento para o setor aéreo durante a Conferência das Nações Unidas sobre Desenvolvimento Sustentável (Rio+20), realizada de 13 a 22 de junho, no Rio de Janeiro. Pela primeira vez, um documento com essa abrangência foi produzido pelo governo brasileiro. O planejamento operacional para os aeroportos e espaço aéreo do País durante o período de realização da conferência define responsabilidades dos órgãos envolvidos, bem como fluxos de passageiros, aeronaves, veículos e estacionamento dos aviões nos pátios.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201202.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2012_3" id="janela7">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2012 / MARCO 03</h2>
+			<div class="content-1">
+				<h3>Criação do Programa de Aviação Regional</h3>
+				<h4>Encurtando distâncias, aproximando brasileiros</h4>
+				<p>A estratégia presente na criação da Secretaria começa a conectar o Brasil, um País continental, e impulsionar o desenvolvimento em regiões distantes dos grandes centros urbanos. O Programa é criado para deixar 96% da população brasileira a pelo menos 100 quilômetros de um aeroporto. Mais de 3.500 dos 5 mil municípios do País serão diretamente beneficiados. O objetivo é construir ou reformar 270 aeroportos regionais. O programa regulariza também a exploração de terminais públicos, para assegurar a capacidade técnica e econômica do gestor administrativo. <a href="http://www.aviacao.gov.br/assuntos/aviacao-regional" class="link" target="_blank">Acesse o site</a></p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201203.png" alt="">
+				</div>
+			</div>
+			<div class="content-21">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201203_1.png" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info" rel="content2">infográfico 1</a>
+				<a href="#" class="ico info nomargin" rel="content21">infográfico 2</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2012_4" id="janela8">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2012 / MARCO 04</h2>
+			<div class="content-1">
+				<h3>Criação da Pesquisa de Satisfação Permanente do Passageiro</h3>
+				<h4>O passageiro como avalista</h4>
+				<p>A Secretaria cria a pesquisa que marca uma nova fase da qualidade dos serviços ofertados pelos aeroportos brasileiros. O passageiro vira sujeito dessa melhoria. No intuito de ser uma ferramenta de controle do desempenho dos aeroportos e um medidor de indicadores de boa gestão, ouve os passageiros e mede diariamente sua satisfação com mais de 40 indicadores de qualidade dos serviços oferecidos pelos 15 aeroportos que movimentam 80% dos viajantes no País. Sua impressão permite aos gestores públicos e privados saberem como os passageiros veem os aeroportos e assim atuarem diretamente sobre os problemas que afetam o usuário. As metas de qualidade são definidas conjuntamente pela Conaero e os gestores. <a href="http://www.aviacao.gov.br/assuntos/aeroportos/pesquisa-satisfacao" class="link" target="_blank">Acesse o site</a></p>
+			</div>
+			<div class="content-3">
+				<iframe width="791" height="445" src="https://www.youtube.com/embed/xGLcqH5y8WY" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico video nomargin" rel="content3">vídeo</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<!-- MODAL 2013 -->
@@ -357,24 +551,110 @@
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2013 / MARCO 01</h2>
+			<div class="content-1">
+				<h3>Criação do Programa Treinar</h3>
+				<h4>Para servir melhor</h4>
+				<p>Com a expansão da Aviação Regional, era necessário preparar mão-de-obra especializada para atuar nos aeroportos do interior do País. Para atender a esta demanda, a Secretaria cria o Programa de Treinamento para Profissionais de Aeroportos Regionais (TREINAR), em junho de 2013, para a formação e capacitação de profissionais envolvidos com a gestão e a operação desses aeroportos. Até hoje, já foram mais de 1.500 profissionais capacitados nos cursos oferecidos.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201301.png" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2013_2" id="janela10">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2013 / MARCO 02</h2>
+			<div class="content-1">
+				<h3>Copa das Confederações e Jornada Mundial da Juventude (JMJ)</h3>
+				<h4>89% de pontualidade</h4>
+				<p>As operações nos aeroportos durante a Copa das Confederações e Jornada Mundial da Juventude serviriam como último teste para a Copa do Mundo de 2014. O balanço desses eventos mostrou que o CTOE acerta novamente no planejamento. Nos sete aeroportos envolvidos no torneio, a média de atrasos foi de 11% - inferior à média europeia, que era de 16%.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201302.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2013_3" id="janela11">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2013 / MARCO 03</h2>
+			<div class="content-1">
+				<h3>Leilão dos Terminais Galeão e Confins</h3>
+				<h4>Ágio de 252%</h4>
+				<p>A terceira rodada de concessões dos aeroportos acontece em novembro, com o leilão dos terminais Antônio Carlos Jobim – Galeão (RJ) e Tancredo Neves – Confins (MG). A arrecadação total chega a R$ 20,8 bilhões, com ágio de 251,74%. O aeroporto carioca foi arrematado por R$ 19 bilhões.</p>
+			</div>
+			<div class="content-4">
+				<div class="carrossel">
+					<div><img src="assets/images/galeria/confins-01.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-02.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-03.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-04.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-05.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-06.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-07.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-08.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-09.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-010.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-011.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-012.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/confins-013.jpg" width="594" height="445" title=""><p>Confins</p></div>
+					<div><img src="assets/images/galeria/galeao-01.jpg" width="594" height="445" title=""><p>Galeão</p></div>
+					<div><img src="assets/images/galeria/galeao-02.jpg" width="594" height="445" title=""><p>Galeão</p></div>
+					<div><img src="assets/images/galeria/galeao-03.jpg" width="594" height="445" title=""><p>Galeão</p></div>
+				</div>
+			</div>
+			<div class="content-5">
+				<div id="compare2" class="fotosComparar">
+					<div><img src="assets/images/galeria/gale_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/galeria/gale_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico fotos" rel="content4">fotos</a>
+				<a href="#" class="ico comparar nomargin" rel="content5">comparar</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2013_4" id="janela12">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2013 / MARCO 04</h2>
+			<div class="content-1">
+				<h3>Criação do Plano Geral de Outorgas</h3>
+				<h4>Operação fica para o melhor administrador</h4>
+				<p>Um dos braços para o fortalecimento do desenvolvimento dos aeroportos regionais e o incentivo aos investimentos na aviação civil, o Plano Geral de Outorgas (PGO) é criado para definir a responsabilidade pela administração, exploração e manutenção dos aeródromos públicos. Os aeroportos devem ser administrados por quem demonstrar interesse, maior capacidade de gestão e um Produto Interno Bruto (PIB) superior a R$ 1 bilhão. A medida estimula a concorrência, aumenta a capilaridade do transporte aéreo, bem como torna o setor mais eficiente.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201304.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<!-- MODAL 2014 -->
@@ -382,6 +662,91 @@
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2014 / MARCO 01</h2>
+			<div class="content-1">
+				<h3>Copa do Mundo</h3>
+				<h4>Pontualidade chega a 82,1%</h4>
+				<p>Quase 18 milhões de passageiros circularam pelos 21 principais aeroportos utilizados na Copa. Somente os aeroportos que atenderam as 12 cidades-sede recebem quatro vezes mais pessoas que os aeroportos da África do Sul durante a Copa de 2010. Mesmo com todo esse movimento, o índice de atrasos nas decolagens fica em apenas 6,9%. O baixo índice e a infraestrutura moderna são frutos do planejamento e da integração entre os diversos órgãos públicos e entidades privadas. <a href="http://www.aviacao.gov.br/noticias/2014/04/copy202_of_titulo-da-noticia-entre-35-e-90-caracteres-com-espaco/presskit_plano_operacao_copa.pdf" class="link" target="_blank">Manual de operação</a></p>
+			</div>
+			<div class="content-5">
+				<div id="compare3" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/bsb_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/bsb_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare4" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/cuiaba_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/cuiaba_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare5" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/bh_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/bh_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare6" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/curitiba_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/curitiba_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare7" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/fortaleza_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/fortaleza_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare8" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/galeao_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/galeao_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare9" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/gru_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/gru_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare10" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/manaus_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/manaus_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare11" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/natal_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/natal_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare12" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/poa_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/poa_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare13" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/recife_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/recife_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare14" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/sdu_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/sdu_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare15" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/salvador_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/salvador_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+				<div id="compare16" class="fotosComparar">
+					<div><img src="assets/images/aeroportos/viracopos_old-01.jpg" alt="" height="445" width="668"></div>
+					<div><img src="assets/images/aeroportos/viracopos_new-01.jpg" alt="" height="445" width="668"></div>
+				</div>
+			</div>
+			<div class="content-51">
+				<a href="#" class="sigla link1 active" alt="Brasília" title="Brasília">BSB</a>
+				<a href="#" class="sigla link2" alt="Cuiabá" title="Cuiabá">CGB</a>
+				<a href="#" class="sigla link3" alt="Belo Horizonte" title="Belo Horizonte">CNF</a>
+				<a href="#" class="sigla link4" alt="Curitiba" title="Curitiba">CWB</a>
+				<a href="#" class="sigla link5" alt="Fortaleza" title="Fortaleza">FOR</a>
+				<a href="#" class="sigla link6" alt="Galeão" title="Galeão">GIG</a>
+				<a href="#" class="sigla link7" alt="Guarulhos" title="Guarulhos">GRU</a>
+				<a href="#" class="sigla link8" alt="Manaus" title="Manaus">MAO</a>
+				<a href="#" class="sigla link9" alt="Natal" title="Natal">NAT</a>
+				<a href="#" class="sigla link10" alt="Porto Alegre" title="Porto Alegre">POA</a>
+				<a href="#" class="sigla link11" alt="Recife" title="Recife">REC</a>
+				<a href="#" class="sigla link12" alt="Santos Dummont" title="Santos Dummont">SDU</a>
+				<a href="#" class="sigla link13" alt="Salvador" title="Salvador">SSA</a>
+				<a href="#" class="sigla link14" alt="Viracopos" title="Viracopos">VCP</a>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico comparar nomargin" rel="content5">comparar</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<!-- MODAL 2015 -->
@@ -389,63 +754,213 @@
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2015 / MARCO 01</h2>
+			<div class="content-1">
+				<h3>Criação do GT para regulamentação do uso de Drones</h3>
+				<h4>Voando com responsabilidade</h4>
+				<p>O grupo de trabalho, coordenado pela Secretaria de Aviação, é formado por 11 órgãos públicos e teve seus trabalhos iniciados em fevereiro. Desde então, são realizadas reuniões com o objetivo de promover a inserção das aeronaves tripuladas remotamente de forma segura e harmonizada, por meio da atualização da regulamentação, ações de fiscalização e campanha educativa junto à população. <a href="http://www.aviacao.gov.br/assuntos/drone-legal" class="link" target="_blank">Acesse o site</a></p>
+			</div>
+			<div class="content-3">
+				<iframe width="791" height="445" src="https://www.youtube.com/embed/32-vVjFHAmQ" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico video nomargin" rel="content3">vídeo</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2015_2" id="janela15">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2015 / MARCO 02</h2>
+			<div class="content-1">
+				<h3>Primeira edição do Prêmio Aeroportos + Brasil</h3>
+				<h4>Quem escolhe é o passageiro</h4>
+				<p>A Secretaria cria uma nova ferramenta para melhorar a gestão dos aeroportos. Como reconhecimento ao melhor terminal do País e aos melhores terminais em categorias de serviços muito importantes para os passageiros, a Secretaria lança o prêmio “Aeroportos + Brasil”. Para chegar aos resultados, ouve milhares de passageiros nos 15 aeroportos que respondem por 80% da movimentação do País. Sua opinião orienta gestores públicos e privados a trabalharem juntos na oferta de serviços cada vez melhores, medidos pela Pesquisa Permanente de Satisfação do Passageiro, utilizada para saber o que a sociedade aprova ou desaprova no ambiente aeroportuário. Antes do Aeroporto + Brasil, existia o prêmio Boa Viagem, que, em sua primeira edição, em 2014, avaliou os sete terminais das cidades-sede da Copa das Confederações, além de Guarulhos. <a href="http://www.aviacao.gov.br/noticias/2015/04/passageiros-escolhem-o-aeroporto-do-recife-como-o-melhor-do-brasil" class="link" target="_blank">Acesse o site</a></p>
+			</div>
+			<div class="content-3">
+				<iframe width="791" height="445" src="https://www.youtube.com/embed/Fa2y0blHj3k" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico video nomargin" rel="content3">vídeo</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2015_3" id="janela16">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2015 / MARCO 03</h2>
-		</div>
+			<div class="content-1">
+				<h3>Anúncio das Concessões dos Terminais de Fortaleza (CE); Salvador (BA); Florianópolis (SC); e Porto Alegre (RS)</h3>
+				<h4>Em boa política não se mexe</h4>
+				<p>O Governo Federal divulga, em junho de 2015, a nova etapa do Programa de Investimento em Logística (PIL). Nele, são anunciadas as concessões dos terminais Pinto Martins, em Fortaleza (CE); Luiz Eduardo Magalhães, em Salvador (BA); Hercílio Luz, em Florianópolis (SC); e Salgado Filho, em Porto Alegre (RS). A previsão inicial é que sejam investidos R$ 7,1 bilhões na ampliação da infraestrutura desses aeroportos.<br><a href="http://globoplay.globo.com/v/4241820/" class="link" target="_blank">Vídeo Jornal da Globo - 09/06/2015</a><br><a href="http://www.sbt.com.br/jornalismo/jornaldosbt/noticias/66657/Governo-federal-lanca-o-novo-pacote-de-concessoes-.html" class="link" target="_blank">Vídeo SBT Brasil - 10/06/2015</a><br><a href="http://noticias.r7.com/jornal-da-record/videos/para-recuperar-economia-governo-lanca-plano-de-concessoes-de-quase-r-200-bilhoes-15102015" class="link" target="_blank">Vídeo Jornal da Record - 09/06/2015</a></p>
+			</div>
+			<div class="content-4">
+				<div class="carrossel">
+					<div><a href="assets/images/pils/big/estadao_pil-2015.jpg" target="_blank"><img src="assets/images/pils/estadao_pil-2015.jpg"></a></div>
+					<div><a href="assets/images/pils/big/estadao_pil-2015-1.jpg" target="_blank"><img src="assets/images/pils/estadao_pil-2015-1.jpg"></a></div>
+					<div><a href="assets/images/pils/big/estadao_pil-2015-10.jpg" target="_blank"><img src="assets/images/pils/estadao_pil-2015-10.jpg"></a></div>
+					<div><a href="assets/images/pils/big/fsp_pil-2015.jpg" target="_blank"><img src="assets/images/pils/fsp_pil-2015.jpg"></a></div>
+					<div><a href="assets/images/pils/big/fsp_pil-2015-05.jpg" target="_blank"><img src="assets/images/pils/fsp_pil-2015-05.jpg"></a></div>
+					<div><a href="assets/images/pils/big/fsp_pil-2015-06.jpg" target="_blank"><img src="assets/images/pils/fsp_pil-2015-06.jpg"></a></div>
+					<div><a href="assets/images/pils/big/fsp_pil-2015-09.jpg" target="_blank"><img src="assets/images/pils/fsp_pil-2015-09.jpg"></a></div>
+					<div><a href="assets/images/pils/big/fsp_pil-2015-10.jpg" target="_blank"><img src="assets/images/pils/fsp_pil-2015-10.jpg"></a></div>
+					<div><a href="assets/images/pils/big/jc-pe_pil-2015.jpg" target="_blank"><img src="assets/images/pils/jc-pe_pil-2015.jpg"></a></div>
+					<div><a href="assets/images/pils/big/jcrj_pil-2015.jpg" target="_blank"><img src="assets/images/pils/jcrj_pil-2015.jpg"></a></div>
+					<div><a href="assets/images/pils/big/o-globo_pil-2015-10.jpg" target="_blank"><img src="assets/images/pils/o-globo_pil-2015-10.jpg"></a></div>
+					<div><a href="assets/images/pils/big/valor_pil-2015-06.jpg" target="_blank"><img src="assets/images/pils/valor_pil-2015-06.jpg"></a></div>
+					<div><a href="assets/images/pils/big/valor_pil-2015-10.jpg" target="_blank"><img src="assets/images/pils/valor_pil-2015-10.jpg"></a></div>
+					<div><a href="assets/images/pils/big/zh_pil-2015.jpg" target="_blank"><img src="assets/images/pils/zh_pil-2015.jpg"></a></div>
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico fotos nomargin" rel="content4">fotos</a>
+				<div class="bracklet-right right"></div>
+			</div>
+		</div>		
 	</div>
 	<div class="modal ano2015_4" id="janela17">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2015 / MARCO 04</h2>
+			<div class="content-1">
+				<div class="scrollable">
+					<h3>Lançamento do Manual de Planejamento do Setor de Aviação Civil – Jogos Olímpicos e Paralímpicos Rio 2016</h3>
+					<h4>Manual para receber bem mais de 1 milhão de pessoas</h4>
+					<p>A 300 dias dos Jogos, o CTOE lança o Manual da Aviação – Jogos Olímpicos e Paralímpicos 2016. Em suas 327 páginas, está o guia para o País receber bem mais de 1 milhão de atletas, delegações e turistas de 206 países que escolheram o avião para virem acompanhar o evento, entre agosto e setembro do ano que vem. Ele define o uso dos terminais de passageiros, a ocupação de pátios e pistas, questões de segurança e de defesa aérea, capacidade de operação dos aeroportos e acessibilidade. A operação envolve 39 aeroportos, incluindo as principais portas de entrada para a competição - Galeão, Santos Dumont e Guarulhos -, os terminais das cidades que vão sediar os jogos de futebol (Brasília, Salvador, Belo Horizonte, Manaus e São Paulo) e os que poderão ser utilizados como alternativa para desembarque ou estacionamento de aeronaves. O CTOE trabalhou com 26 parceiros no planejamento da operação nos aeroportos. <a href="http://www.aviacao.gov.br/assuntos/jogos-rio-2016/aeroportos/manual-aeroporto-olimpiada.pdf" class="link" target="_blank">Manual de operação</a></p>
+					<hr>
+					<h3>Criação do Programa Bolsa-Piloto</h3>
+					<h4>Formando novos pilotos</h4>
+					<p>O Programa oferece aos candidatos selecionados bolsa de aulas práticas de voo para obtenção de licença de Piloto Privado e de Piloto Comercial de Avião. Ao todo, foram selecionados 55 candidatos.</p>
+				</div>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201504.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2015_5" id="janela18">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2015 / MARCO 05</h2>
+			<div class="content-1">
+				<h3>Pesquisa <span>“O Brasil que Voa – Perfil dos Passageiros, Aeroportos e Rotas Do Brasil”</span></h3>
+				<h4>25% dos viajantes ganham até 5 salários mínimos</h4>
+				<p>A Secretaria trabalha com informações precisas para desenvolver estratégias de políticas públicas bem embasadas. Para isso, produz pesquisas. Em 2014, entrevistou 150 mil passageiros nos 65 aeroportos responsáveis por 98% da movimentação aérea do País para realizar a pesquisa “O Brasil que voa – Perfil dos Passageiros, Aeroportos e Rotas do Brasil”, lançada em 2015. Cada passageiro respondeu a 70 perguntas. Assim, foi criado um banco de dados com 10,5 milhões de respostas para complementar o sistema de informações da Aviação que subsidiam suas decisões. Com a pesquisa, a Secretaria passa a conhecer quem é o passageiro brasileiro, as rotas de deslocamento e as áreas de influência dos aeroportos no País. Descobriu, por exemplo, que quase 25% de quem viaja de avião ganha até cinco salários mínimos. <a href="http://www.aviacao.gov.br/obrasilquevoa/" class="link" target="_blank">Hotsite</a></p>
+			</div>
+			<div class="content-3">
+				<iframe width="791" height="445" src="https://www.youtube.com/embed/-m62wYSt6Fg" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico video nomargin" rel="content3">vídeo</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2016" id="janela19">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2016 / MARCO 01</h2>
+			<div class="content-1">
+				<h3>Três anos de Pesquisa de Satisfação do Passageiro</h3>
+				<h4>85% dos brasileiros aprovam seus aeroportos</h4>
+				<p>No seu terceiro ano de realização, a Pesquisa Permanente de Satisfação do Passageiro registra o maior índice de satisfação já demonstrado pelos passageiros desde janeiro de 2013, quando foi realizada sua 1ª rodada. No último trimestre de 2015, 85% dos entrevistados consideraram “bons” ou “muito bons” a infraestrutura, a gestão e os serviços dos 15 principais aeroportos do Brasil. <a href="http://www.aviacao.gov.br/assuntos/aeroportos/pesquisa-satisfacao" class="link" target="_blank">Vídeo</a></p>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2016_2" id="janela20">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2016 / MARCO 02</h2>
+			<div class="content-1">
+				<h3>Pontualidade em alta</h3>
+				<h4>Ranking de excelência mundial inclui seis aeroportos brasileiros</h4>
+				<p>O relatório da Liga da Pontualidade 2015, da consultoria britânica OAG, especialidade em inteligência no mercado de aviação, indica que os aeroportos e companhias brasileiras estão entre os mais pontuais do mundo, um resultado que leva em consideração 50 milhões de voos realizados por mais de 900 companhias aéreas em mais de 4 mil aeroportos no mundo todo.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201602.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2016_3" id="janela21">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2016 / MARCO 03</h2>
+			<div class="content-1">
+				<h3>Segunda Edição do Prêmio Aeroportos + Brasil</h3>
+				<h4>Curitiba é o melhor</h4>
+				<p>A Secretaria lança a 2ª edição do Prêmio Aeroportos + Brasil. Desta vez, são premiados também as melhores companhias aéreas em desempenho de check-in e a mais rápida restituição de bagagem. Nessas duas categorias, o serviço bem prestado ao passageiro depende da colaboração entre empresas aéreas e aeroportos. Portanto, agora os terminais são premiados em oito categorias de serviços, as companhias em duas e ainda há o prêmio de melhor aeroporto do Brasil. Nesta edição, o aeroporto vencedor foi o Afonso Pena, em Curitiba.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201603.png" alt="">
+				</div>
+			</div>
+			<div class="content-3">
+				<iframe width="791" height="445" src="https://www.youtube.com/embed/Fa2y0blHj3k" frameborder="0" allowfullscreen></iframe>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info" rel="content2">infográfico</a>
+				<a href="#" class="ico video nomargin" rel="content3">vídeo</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
 	<div class="modal ano2016_4" id="janela22">
 		<div class="container">
 			<a class="fechar">X</a>
 			<h2>2016 / MARCO 04</h2>
+			<div class="content-1">
+				<h3>Decolando para o futuro</h3>
+				<h4>Empresas fortes e livre mercado para manter o crescimento</h4>
+				<p>O setor aéreo brasileiro triplicou de tamanho nos últimos 12 anos e todas as projeções apontam para a continuidade dessa tendência nas próximas duas décadas. Para crescer como nos últimos anos, especialmente nos últimos cinco anos, com qualidade comprovada por pesquisas e elevados índices de pontualidade, a Secretaria começa 2016 proporcionando ao setor a possibilidade de ter empresas fortes convivendo num ambiente de livre competição que permita novos investimentos e desenvolvimento. A Medida Provisória 714 aumenta o limite do capital estrangeiro nas empresas aéreas nacionais e possibilita à Infraero enfrentar o desafio de sobreviver num mundo sem monopólios combinando negócios que a mantenham para competir com a manutenção de aeroportos onde eles têm um papel social acima dos próprios negócios. Completando, a Secretaria cria um ambiente de discussões de propostas para que as companhias aéreas baixem seus custos operacionais e, assim, os preços das passagens aéreas.</p>
+			</div>
+			<div class="content-2">
+				<div class="scrollable">
+					<img src="assets/images/infografico-201604.jpg" alt="">
+				</div>
+			</div>
+			<div class="icons">
+				<div class="bracklet-left left"></div>
+				<a href="#" class="ico desc active" rel="content1">descrição</a>
+				<a href="#" class="ico info nomargin" rel="content2">infográfico</a>
+				<div class="bracklet-right right"></div>
+			</div>
 		</div>
 	</div>
-
 	<footer>
 		<a href="http://www.aviacao.gov.br/" alt="Secretaria de Aviação Civil Presidência da República" title="Secretaria de Aviação Civil Presidência da República" target="_blank" rel="noopener"></a>
 	</footer>
-	<script src="assets/js/jquery-1.12.1.min.js"></script>
-	<script src="assets/js/jquery.easing.1.3.js"></script>
-	<script src="assets/js/jquery.jscroll.js"></script>
-	<script src="assets/js/script.js"></script>
 </body>
 </html>
